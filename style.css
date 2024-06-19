@@ -1,0 +1,125 @@
+header {
+  background-color: #7f6b67; /* Nouvelle couleur de fond de l'en-tête */
+  padding: 20px 40px; /* Augmentez l'espacement autour du contenu de l'en-tête */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre sous l'en-tête plus prononcée */
+  display: flex; /* Utilise flexbox pour aligner les éléments à l'intérieur */
+  align-items: center; /* Centre les éléments verticalement */
+  height: 60px; /* Hauteur de l'en-tête */
+  margin-bottom: 2%;
+}
+
+.logo {
+  height: 90px; /* Hauteur augmentée du logo */
+  margin-right: 30px; /* Marge à droite du logo accrue */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.wrapper {
+  display: flex; /* Utilise flexbox pour aligner les éléments côte à côte */
+  justify-content: center; /* Centre les tableaux dans la page */
+  align-items: flex-start; /* Aligner les tableaux en haut */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+}
+
+.table-container {
+  margin: 10px; /* Espacement autour de chaque tableau */
+}
+
+#sumContainer {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#sumHauteursFacade.overLimit {
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  width: auto; /* Assure que la largeur du tableau s'ajuste au contenu */
+}
+
+.left-table,
+.right-table,
+.drawer-dimensions { /* Applique un style cohérent à tous les tableaux */
+  border: 2px solid black; /* Bordure noire pour le tableau entier */
+}
+
+th, 
+td {
+  border: 1px solid black; /* Bordure noire pour chaque cellule */
+  padding: 8px;
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+.drawer-dimensions thead tr th,
+.right-table thead tr th {
+  background-color: #97817b;
+  color: white !important; /* Force white color despite inline styles */
+}
+
+select {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid black; /* Bordure pour les sélecteurs */
+}
+
+#heightError {
+  color: red;
+  max-width: 600px; /* Ou la largeur maximale selon votre mise en page */
+  white-space: normal;
+  display: none;
+}
+
+/* Styles spécifiques pour le nouveau tableau des dimensions des tiroirs */
+.drawer-dimensions th {
+  background-color: #eee; /* Couleur de fond légèrement différente pour différencier */
+}
+
+.drawer-dimensions td {
+  text-align: center; /* Centrage du texte dans les cellules pour une meilleure lisibilité */
+}
+
+/* Styles pour gérer les images dans les cellules */
+.drawer-dimensions img {
+  width: 50px; /* Taille des images à ajuster selon les besoins */
+  height: auto;
+}
+
+/* Style pour les étiquettes du tableau */
+.left-table td:first-child {
+  background-color: #ffd000; /* Jaune */
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px; /* Ajout d'un peu de marge à gauche */
+  color: #FFFFFF; /* Couleur de texte blanche */
+}
+
+/* Style pour les champs de saisie */
+.left-table input[type="number"],
+.left-table select {
+  width: 100%;
+  padding: 5px; /* Plus de padding pour agrandir le champ */
+  box-sizing: border-box; /* Permet d'inclure le padding dans la largeur définie */
+  border: 2px solid #ccc; /* Bordure plus visible */
+  background-color: #fff; /* Fond blanc pour les champs de saisie */
+}
+
+/* Augmentation de la taille du texte pour tous les éléments du tableau */
+.left-table {
+  font-size: 16px; /* Plus grande taille de texte */
+}
+
+/* Alignement des textes dans les dropdowns et ajustements */
+.left-table select {
+  color: #000; /* Texte en noir pour plus de visibilité */
+  text-align: center;
+  text-align-last: center; /* Centre le texte dans le dropdown */
+  -moz-text-align-last: center;
+}
